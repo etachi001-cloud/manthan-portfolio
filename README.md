@@ -1,6 +1,6 @@
 # Manthan Patel - Modern Futuristic Personal Portfolio
 
-> 🚀 **Live Production Website**: [https://etachi001-cloud.github.io/portfolio/](https://etachi001-cloud.github.io/portfolio/)
+> 🚀 **Live Production Website**: [https://manthanpatel.in](https://manthanpatel.in) *(Backup: [https://etachi001-cloud.github.io/portfolio/](https://etachi001-cloud.github.io/portfolio/))*
 
 A sleek, modern, futuristic personal portfolio website for **Manthan Patel**, B.Tech Information Technology student at Vidya Deep University and aspiring AI & Data Science professional.
 
