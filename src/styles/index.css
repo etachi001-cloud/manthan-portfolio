@@ -1,0 +1,215 @@
+/* ==========================================================================
+   FUTURISTIC DESIGN SYSTEM - MANTHAN PATEL PORTFOLIO
+   Theme: Dark Obsidian with Electric Purple & Cyber Violet Neon Accents
+   ========================================================================== */
+
+:root {
+  /* Dark Canvas Colors */
+  --bg-dark: #07050e;
+  --bg-dark-secondary: #0d0a1a;
+  --bg-card: rgba(18, 14, 36, 0.72);
+  --bg-card-hover: rgba(28, 20, 56, 0.85);
+  --bg-glass: rgba(15, 11, 30, 0.65);
+  --bg-glass-heavy: rgba(10, 7, 22, 0.88);
+
+  /* Primary Accent: Purple Spectrum */
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-300: #d8b4fe;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+  --purple-800: #6b21a8;
+  --purple-900: #581c87;
+
+  /* Cyber Micro-Accents */
+  --cyan-accent: #38bdf8;
+  --pink-accent: #f43f5e;
+  --indigo-deep: #4f46e5;
+  --emerald-success: #10b981;
+
+  /* Borders & Glows */
+  --border-glass: rgba(168, 85, 247, 0.2);
+  --border-glass-bright: rgba(192, 132, 252, 0.45);
+  --glow-primary: 0 0 25px rgba(168, 85, 247, 0.35);
+  --glow-strong: 0 0 40px rgba(168, 85, 247, 0.6);
+  --glow-cyan: 0 0 20px rgba(56, 189, 248, 0.3);
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Modern Reset & Base Rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  font-size: 16px;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: #f1f5f9;
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 100% 40%, rgba(99, 102, 241, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 0% 75%, rgba(168, 85, 247, 0.09) 0%, transparent 50%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Custom Futuristic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.35);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.6);
+}
+
+/* Selection Color */
+::selection {
+  background: var(--purple-600);
+  color: #ffffff;
+}
+
+/* Layout Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Typography Gradient Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 10%, #d8b4fe 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 40%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cyber {
+  background: linear-gradient(135deg, #38bdf8 0%, #c084fc 60%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section Header Component */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--purple-300);
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.28);
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}

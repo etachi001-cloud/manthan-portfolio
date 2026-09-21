@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background Hexagon / Cyber Shield -->
+  <polygon points="32,4 58,18 58,46 32,60 6,46 6,18" fill="#090615" stroke="url(#purpleGlow)" stroke-width="2.5" />
+  
+  <!-- Inner cyber lines -->
+  <polygon points="32,10 52,22 52,42 32,54 12,42 12,22" fill="#130d29" stroke="#8b5cf6" stroke-width="1" opacity="0.6" />
+
+  <!-- Monogram MP with futuristic cutouts -->
+  <text x="32" y="38" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-weight="900" font-size="20" fill="url(#purpleGlow)" text-anchor="middle" letter-spacing="1" filter="url(#glow)">MP</text>
+  
+  <!-- Neon corner accents -->
+  <circle cx="32" cy="10" r="2" fill="#c084fc" />
+  <circle cx="52" cy="42" r="2" fill="#38bdf8" />
+  <circle cx="12" cy="42" r="2" fill="#38bdf8" />
+</svg>
