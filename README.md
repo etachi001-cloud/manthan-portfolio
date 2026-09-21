@@ -2,7 +2,7 @@
 
 > 🚀 **Live Production Website**: [https://etachi001-cloud.github.io/manthan-portfolio/](https://etachi001-cloud.github.io/manthan-portfolio/)
 
-A sleek, modern, futuristic personal portfolio website for **Manthan Patel**, B.Tech Information Technology student at Vidya Deep University and aspiring AI & Data Science professional.
+A sleek, modern, futuristic personal portfolio website for **Manthan Patel**, B.Tech Information Technology student at Vidhyadeep University and aspiring AI & Data Science professional.
 
 Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dark glassmorphism design system with neon purple glows (`#a855f7`, `#8b5cf6`, `#c084fc`).
 
@@ -13,7 +13,7 @@ Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dar
 - **Futuristic AI / Developer Theme**: Deep obsidian canvas, glassmorphism cards, neon purple glowing borders, and subtle cyber grid effects.
 - **Interactive 3D Hero Element**: Three.js WebGL digital neural constellation with dynamic particle nodes, interconnecting lines, orbital spin, and mouse parallax.
 - **Typewriter Effect**: Dynamic cycling tagline highlighting your focus in AI, Data Science, and IT.
-- **Academic Timeline**: Modern education milestone cards for B.Tech in IT at Vidya Deep University (7th Semester, 2027) and 12th Pass.
+- **Academic Timeline**: Modern education milestone cards for B.Tech in IT at Vidhyadeep University (7th Semester, 2027) and 12th Pass.
 - **Verified Skills Showcase**: Interactive skill cards for **Python**, **SQL**, **Data Analytics**, **Web Development**, and **AI / Machine Learning** without fabricated percentages.
 - **Featured Project**: Showcase for **Student Management System** linking directly to the real GitHub repository (`https://github.com/etachi001-cloud/student-management-system`).
 - **Live GitHub Activity**: Dynamic API integration querying profile data and repositories for `@etachi001-cloud`.
@@ -54,7 +54,7 @@ Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dar
     └── sections/
         ├── HeroSection.jsx     # Hero headline, badges, CTAs, 3D background
         ├── AboutSection.jsx    # Bio, location, degree summary, engineering pillars
-        ├── EducationSection.jsx# Timeline (Vidya Deep University & 12th Pass)
+        ├── EducationSection.jsx# Timeline (Vidhyadeep University & 12th Pass)
         ├── SkillsSection.jsx   # Animated skill cards
         ├── ProjectsSection.jsx # Student Management System showcase
         ├── GithubSection.jsx   # GitHub profile & repository cards

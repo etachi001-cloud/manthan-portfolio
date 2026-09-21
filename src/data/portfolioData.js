@@ -21,6 +21,7 @@ export const portfolioData = {
     displayPhone: "+91 83478 94403",
     githubUsername: "etachi001-cloud",
     githubUrl: "https://github.com/etachi001-cloud",
+    linkedinUrl: "https://www.linkedin.com/in/manthan-patel-559a31438",
     availability: "Open to Internships & Entry-Level Tech Roles",
     // Typewriter roles shown in Hero section
     typingRoles: [
@@ -40,7 +41,7 @@ export const portfolioData = {
       id: "btech-it",
       degree: "B.Tech",
       branch: "Information Technology",
-      institution: "Vidya Deep University",
+      institution: "Vidhyadeep University",
       status: "7th Semester",
       expectedGraduation: "2027",
       period: "2023 - 2027",
@@ -175,7 +176,7 @@ export const portfolioData = {
     downloadFileName: "Manthan_Patel_Resume.pdf",
     // When you have your PDF file ready, place it into the public/ folder as resume.pdf
     pdfPath: "/resume.pdf",
-    summary: "B.Tech Information Technology student at Vidya Deep University passionate about AI, Data Analytics, Python, SQL, and modern Web Development.",
+    summary: "B.Tech Information Technology student at Vidhyadeep University passionate about AI, Data Analytics, Python, SQL, and modern Web Development.",
     availableOnline: true
   }
 };

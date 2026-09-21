@@ -90,7 +90,7 @@ export default function SkillsSection() {
         >
           <Sparkles size={20} color="var(--purple-400)" style={{ flexShrink: 0 }} />
           <p style={{ fontSize: '0.88rem', color: '#cbd5e1', margin: 0, lineHeight: '1.5' }}>
-            <strong>Commitment to Integrity:</strong> Skill areas reflect verified technical competencies practiced through course work, hands-on development, and academic projects at Vidya Deep University without arbitrary percentage metrics.
+            <strong>Commitment to Integrity:</strong> Skill areas reflect verified technical competencies practiced through course work, hands-on development, and academic projects at Vidhyadeep University without arbitrary percentage metrics.
           </p>
         </div>
       </div>

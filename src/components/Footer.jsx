@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Heart, ArrowUpRight } from 'lucide-react';
 import GithubIcon from './GithubIcon';
+import LinkedinIcon from './LinkedinIcon';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Footer() {
@@ -70,6 +71,19 @@ export default function Footer() {
               >
                 <GithubIcon size={16} />
                 <span>github.com/{personal.githubUsername}</span>
+                <ArrowUpRight size={13} style={{ opacity: 0.7 }} />
+              </a>
+
+              <a
+                href={personal.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#cbd5e1', fontSize: '0.88rem' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--purple-300)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#cbd5e1')}
+              >
+                <LinkedinIcon size={16} />
+                <span>linkedin.com/in/manthan-patel-559a31438</span>
                 <ArrowUpRight size={13} style={{ opacity: 0.7 }} />
               </a>
 

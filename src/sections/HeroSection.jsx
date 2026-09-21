@@ -49,7 +49,7 @@ export default function HeroSection() {
 
           {/* Professional Introduction Statement */}
           <p className="hero-intro-text">
-            B.Tech Information Technology student at Vidya Deep University passionate about turning raw data and intelligent algorithms into practical, impactful solutions. Dedicated to continuous learning and building modern applications.
+            B.Tech Information Technology student at Vidhyadeep University passionate about turning raw data and intelligent algorithms into practical, impactful solutions. Dedicated to continuous learning and building modern applications.
           </p>
 
           {/* Call-to-Action Buttons */}
@@ -92,7 +92,7 @@ export default function HeroSection() {
 
             <div className="hero-stat-card glass-card">
               <div className="hero-stat-label">University</div>
-              <div className="hero-stat-value">Vidya Deep University</div>
+              <div className="hero-stat-value">Vidhyadeep University</div>
             </div>
 
             <div className="hero-stat-card glass-card">

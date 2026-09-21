@@ -69,7 +69,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div style={{ fontSize: '0.88rem', fontWeight: 600, color: '#ffffff' }}>
                 B.Tech in Information Technology
               </div>
-              <div style={{ fontSize: '0.78rem', color: 'var(--purple-300)' }}>Vidya Deep University (2027)</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--purple-300)' }}>Vidhyadeep University (2027)</div>
             </div>
 
             <div style={{ padding: '0.75rem', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 8 }}>
@@ -88,6 +88,17 @@ export default function ResumeModal({ isOpen, onClose }) {
 
         {/* Action Controls */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'flex-end', paddingTop: '0.5rem' }}>
+          <a
+            href={resume.pdfPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+            style={{ gap: '0.5rem' }}
+          >
+            <ExternalLink size={16} />
+            <span>Open PDF</span>
+          </a>
+
           <a
             href={resume.pdfPath}
             download={resume.downloadFileName}

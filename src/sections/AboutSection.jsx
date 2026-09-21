@@ -78,7 +78,7 @@ export default function AboutSection() {
 
               <div className="profile-meta-item">
                 <div className="profile-meta-label">University</div>
-                <div className="profile-meta-val">Vidya Deep Univ.</div>
+                <div className="profile-meta-val">Vidhyadeep University</div>
               </div>
 
               <div className="profile-meta-item">

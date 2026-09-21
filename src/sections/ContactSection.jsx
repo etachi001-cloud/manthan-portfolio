@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, Copy, Check, AlertCircle, ArrowUpRight, MessageSquare } from 'lucide-react';
 import GithubIcon from '../components/GithubIcon';
+import LinkedinIcon from '../components/LinkedinIcon';
 import { portfolioData } from '../data/portfolioData';
 
 export default function ContactSection() {
@@ -218,6 +219,29 @@ export default function ContactSection() {
                 className="btn btn-secondary btn-sm"
               >
                 <span>View</span>
+                <ArrowUpRight size={14} />
+              </a>
+            </div>
+
+            {/* LinkedIn Quick Card */}
+            <div className="contact-method-card glass-card">
+              <div className="contact-method-left">
+                <div className="contact-icon-bubble">
+                  <LinkedinIcon size={20} />
+                </div>
+                <div>
+                  <div className="contact-method-label">LinkedIn Profile</div>
+                  <div className="contact-method-val">manthan-patel-559a31438</div>
+                </div>
+              </div>
+
+              <a
+                href={personal.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary btn-sm"
+              >
+                <span>Connect</span>
                 <ArrowUpRight size={14} />
               </a>
             </div>
