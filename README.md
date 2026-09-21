@@ -1,5 +1,7 @@
 # Manthan Patel - Modern Futuristic Personal Portfolio
 
+> 🚀 **Live Production Website**: [https://etachi001-cloud.github.io/portfolio/](https://etachi001-cloud.github.io/portfolio/)
+
 A sleek, modern, futuristic personal portfolio website for **Manthan Patel**, B.Tech Information Technology student at Vidya Deep University and aspiring AI & Data Science professional.
 
 Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dark glassmorphism design system with neon purple accents (`#a855f7`, `#8b5cf6`, `#c084fc`).
