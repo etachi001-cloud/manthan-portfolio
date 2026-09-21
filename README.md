@@ -1,26 +1,26 @@
 # Manthan Patel - Modern Futuristic Personal Portfolio
 
+> 🚀 **Live Production Website**: [https://etachi001-cloud.github.io/manthan-portfolio/](https://etachi001-cloud.github.io/manthan-portfolio/)
+
 A sleek, modern, futuristic personal portfolio website for **Manthan Patel**, B.Tech Information Technology student at Vidya Deep University and aspiring AI & Data Science professional.
 
-Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dark glassmorphism design system with neon purple accents (`#a855f7`, `#8b5cf6`, `#c084fc`).
+Built with **React**, **Vite**, **Three.js**, **Lucide Icons**, and a custom dark glassmorphism design system with neon purple glows (`#a855f7`, `#8b5cf6`, `#c084fc`).
 
 ---
 
 ## 🌟 Key Features
 
-- **Futuristic AI / Developer Theme**: Deep obsidian canvas, glassmorphism cards, neon purple glowing borders, and subtle cyber grid background.
+- **Futuristic AI / Developer Theme**: Deep obsidian canvas, glassmorphism cards, neon purple glowing borders, and subtle cyber grid effects.
 - **Interactive 3D Hero Element**: Three.js WebGL digital neural constellation with dynamic particle nodes, interconnecting lines, orbital spin, and mouse parallax.
 - **Typewriter Effect**: Dynamic cycling tagline highlighting your focus in AI, Data Science, and IT.
 - **Academic Timeline**: Modern education milestone cards for B.Tech in IT at Vidya Deep University (7th Semester, 2027) and 12th Pass.
 - **Verified Skills Showcase**: Interactive skill cards for **Python**, **SQL**, **Data Analytics**, **Web Development**, and **AI / Machine Learning** without fabricated percentages.
-- **Featured Project Showcase**: Showcase for **Student Management System** linking directly to the real GitHub repository (`https://github.com/etachi001-cloud/student-management-system`).
+- **Featured Project**: Showcase for **Student Management System** linking directly to the real GitHub repository (`https://github.com/etachi001-cloud/student-management-system`).
 - **Live GitHub Activity**: Dynamic API integration querying profile data and repositories for `@etachi001-cloud`.
 - **Validated Contact Form**: Client-side validation with prefilled mailto launcher and ready-to-plug Formspree/EmailJS support.
-- **Resume Modal & Download**: Accessible preview and download interface for your resume (`resume.pdf`).
+- **Resume Modal & Download**: Accessible preview and download interface for your resume.
 - **Active Navigation & Scroll-to-Top**: Sticky glass navbar with real-time section highlight tracking and circular SVG scroll progress button.
-- **100% Responsive & Cross-Device**: Fully optimized for mobile phones, laptops, desktops, and tablets.
-- **Custom Domain Ready**: Clean relative architecture ready for any custom domain such as `www.manthanpatel.com` or `manthanpatel.in`.
-- **Deployment Independent**: Standard Vite + React build output that can be hosted on any static hosting provider.
+- **100% Responsive & Accessible**: Tested on desktop, tablet, and mobile viewports.
 
 ---
 
@@ -78,7 +78,7 @@ npm install
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view your live site.
 
 ---
 
@@ -97,9 +97,32 @@ npm run preview
 
 ---
 
+## 🌐 Deployment Guide (Platform Independent)
+
+The project is completely portable and can be deployed to any static host (Vercel, GitHub Pages, Render, Cloudflare Pages, etc.):
+
+### Option 1: Deploy to Vercel (Recommended)
+1. Push your repository to GitHub.
+2. Go to [vercel.com](https://vercel.com) and import your GitHub repository.
+3. Framework Preset: **Vite** (Build command: `npm run build`, Output directory: `dist`).
+4. Click **Deploy**.
+
+### Option 2: Deploy to GitHub Pages
+1. Push your repository to GitHub.
+2. In your repository settings, navigate to **Settings** -> **Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** (or deploy the `dist/` branch via gh-pages).
+4. Vite's relative base (`base: './'`) automatically ensures all assets resolve correctly without path issues.
+
+### Option 3: Deploy to Render / Any Static Host
+1. Create a new **Static Site** on [Render](https://render.com/).
+2. Build command: `npm run build`.
+3. Publish directory: `dist`.
+
+---
+
 ## ✏️ How to Customize Your Content
 
-All portfolio content is centralized in one file:
+All portfolio content is stored in **one single file**:
 `src/data/portfolioData.js`
 
 ### 1. Update Personal Info or Bio
@@ -118,10 +141,10 @@ personal: {
 ```
 
 ### 2. Replace Your Resume PDF
-Place your resume document into the `public/` folder as `resume.pdf`. The download button will automatically serve your latest PDF.
+Place your real resume file into the `public/` directory named `resume.pdf`. The download button will automatically serve your latest PDF.
 
 ### 3. Add More Projects in the Future
-Open `src/data/portfolioData.js` and add a project object to the `projects` array:
+Open `src/data/portfolioData.js` and add a new project to the `projects` array:
 ```javascript
 {
   id: "my-new-project",
@@ -130,7 +153,7 @@ Open `src/data/portfolioData.js` and add a project object to the `projects` arra
   category: "Python / Data Science",
   description: "A machine learning dashboard predicting trends.",
   technologies: ["Python", "Pandas", "Scikit-Learn", "Streamlit"],
-  liveUrl: "https://your-project-link.com",
+  liveUrl: "https://...",
   githubUrl: "https://github.com/etachi001-cloud/...",
   stats: [
     { label: "Role", value: "Developer" }
@@ -143,10 +166,10 @@ Open `src/data/portfolioData.js` and add a project object to the `projects` arra
 ```
 
 ### 4. Connect the Contact Form to Formspree
-If you want messages delivered directly to your email without opening the user's mail client:
+If you want messages sent directly to your inbox without opening the user's email client:
 1. Create a free account at [Formspree.io](https://formspree.io/).
-2. Create a form and copy your Form ID (e.g. `xpzgabwy`).
-3. In `src/data/portfolioData.js`, update:
+2. Create a new form and copy your Form ID (e.g. `xpzgabwy`).
+3. In `src/data/portfolioData.js`, update the `contact` configuration:
 ```javascript
 contact: {
   serviceType: "formspree",
